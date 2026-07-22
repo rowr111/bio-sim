@@ -4,9 +4,10 @@
 
 // ASSUME: quantum is set to (3.072 MHz) 6.144MHz
 
-#define WS_PIN 1
-#define SCK_PIN 2
-#define SD_PIN 3
+// triangel board (ear): BCLK=PB1, SD=PB2, WS=PB3
+#define WS_PIN 3
+#define SCK_PIN 1
+#define SD_PIN 2
 
 void main(void) {
     uint32_t ws_mask = 1 << WS_PIN;
